@@ -1,0 +1,13 @@
+{
+    "items": [{
+        "itemName": "A",
+        "itemId": 1,
+        "ratingCount": 2,
+        "totalRating": 5
+    }, {
+        "itemName": "B",
+        "itemId": 2,
+        "ratingCount": 2,
+        "totalRating": 8
+    }]
+}
