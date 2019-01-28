@@ -16,6 +16,7 @@
 		9121F13821FDF8CB00BEC4BF /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121F13721FDF8CB00BEC4BF /* ItemListViewModel.swift */; };
 		9121F14021FEBD8800BEC4BF /* HexadTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121F13F21FEBD8800BEC4BF /* HexadTestTests.swift */; };
 		9121F14721FEBDC500BEC4BF /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121F13721FDF8CB00BEC4BF /* ItemListViewModel.swift */; };
+		9121F14921FECCF300BEC4BF /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121F14821FECCF300BEC4BF /* PopoverViewController.swift */; };
 		ADC60846D6C381DD68DC5D39 /* Pods_HexadTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE13566B1C95C44DAB9079F /* Pods_HexadTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		9121F13D21FEBD8800BEC4BF /* HexadTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexadTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9121F13F21FEBD8800BEC4BF /* HexadTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexadTestTests.swift; sourceTree = "<group>"; };
 		9121F14121FEBD8800BEC4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9121F14821FECCF300BEC4BF /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		C45C80576A624A789E5FE354 /* Pods-HexadTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexadTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HexadTest/Pods-HexadTest.release.xcconfig"; sourceTree = "<group>"; };
 		DFE13566B1C95C44DAB9079F /* Pods_HexadTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HexadTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC931B06C4372D8B71DDBA90 /* Pods-HexadTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexadTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HexadTest/Pods-HexadTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				9121F13721FDF8CB00BEC4BF /* ItemListViewModel.swift */,
 				9121F13521FDF2A900BEC4BF /* Items.json */,
 				9121F12521FDF13400BEC4BF /* Main.storyboard */,
+				9121F14821FECCF300BEC4BF /* PopoverViewController.swift */,
 				9121F12821FDF13600BEC4BF /* Assets.xcassets */,
 				9121F12A21FDF13600BEC4BF /* LaunchScreen.storyboard */,
 				9121F12D21FDF13600BEC4BF /* Info.plist */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9121F14921FECCF300BEC4BF /* PopoverViewController.swift in Sources */,
 				9121F12421FDF13400BEC4BF /* ViewController.swift in Sources */,
 				9121F13821FDF8CB00BEC4BF /* ItemListViewModel.swift in Sources */,
 				9121F12221FDF13400BEC4BF /* AppDelegate.swift in Sources */,

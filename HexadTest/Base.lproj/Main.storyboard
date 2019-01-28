@@ -54,23 +54,53 @@
                                 <action selector="randomRating:" destination="LSq-xX-CCn" id="PpU-LJ-tyh"/>
                             </connections>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem tag="1" title="Rating" id="8gV-pX-BRN">
-                                <connections>
-                                    <action selector="sort:" destination="LSq-xX-CCn" id="Lt3-QM-02H"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Name" id="Szu-GS-ikY">
-                                <connections>
-                                    <action selector="sort:" destination="LSq-xX-CCn" id="wrz-up-iag"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Sort" id="Szu-GS-ikY">
+                            <connections>
+                                <action selector="sort:" destination="LSq-xX-CCn" id="wrz-up-iag"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wjs-6I-nNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-293.60000000000002" y="-183.05847076461771"/>
+        </scene>
+        <!--Popover View Controller-->
+        <scene sceneID="SzZ-LZ-taB">
+            <objects>
+                <tableViewController storyboardIdentifier="PopoverViewControllerID" id="enF-Z5-YAc" customClass="PopoverViewController" customModule="HexadTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zkV-5v-yaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="popOverCellId" textLabel="hgR-eN-zws" style="IBUITableViewCellStyleDefault" id="vrD-7Z-a54">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vrD-7Z-a54" id="Wuh-Ku-0Uv">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hgR-eN-zws">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="enF-Z5-YAc" id="eQH-sl-hDU"/>
+                            <outlet property="delegate" destination="enF-Z5-YAc" id="P1n-fF-OI5"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZc-f0-sVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2207" y="-260"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vdv-3y-AkF">

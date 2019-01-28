@@ -43,9 +43,23 @@ class ViewController: UITableViewController {
     
     @IBAction func sort(_ button: UIBarButtonItem) {
         print("sort")
-        self.viewModel.sort(Sort(rawValue: button.tag)!)
-        self.tableView.reloadData()
-    }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let popoverContent = storyboard.instantiateViewController(withIdentifier: "PopoverViewControllerID") as! PopoverViewController
+        popoverContent.callback = {(_ sort:Sort) in
+            print("\(sort)")
+            popoverContent.dismiss(animated: true, completion: nil)
+            self.viewModel.sort(sort)
+            self.tableView.reloadData()
+        }
+        let nav = UINavigationController(rootViewController: popoverContent)
+        nav.modalPresentationStyle = .popover
+        let popover = nav.popoverPresentationController
+        popoverContent.preferredContentSize = CGSize(width: 300, height: 400)
+        popover?.sourceView = self.view
+        popover?.sourceRect = CGRect(x: 0, y: 0, width: 100, height: 100)
+        
+        self.present(nav, animated: true, completion: nil)
+    }    
     
     @IBAction func randomRating(_ button: UIBarButtonItem) {
         if button.tag == 0 {
