@@ -55,12 +55,14 @@ class HexadTestTests: XCTestCase {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
+            // Intentionally baselined to perform better
             model.sort(.rating)
         }
     }
     
     func testPerformanceNameSort() {
         // This is an example of a performance test case.
+        // Intentionally baselined to perform worse
         self.measure {
             // Put the code you want to measure the time of here.
             model.sort(.name)
