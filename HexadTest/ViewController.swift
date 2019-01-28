@@ -30,8 +30,8 @@ class ViewController: UITableViewController {
             fatalError("Cell with identifier itemCellId not found")
         }
         let item = self.viewModel.items[indexPath.row]
-        cell.textLabel?.text = item.itemName        
-        cell.detailTextLabel?.text = "\(item.totalRating/item.ratingCount)"
+        cell.textLabel?.text = item.itemName
+        cell.detailTextLabel?.text = "\(Float(item.totalRating)/Float(item.ratingCount))"
         return cell
     }    
     

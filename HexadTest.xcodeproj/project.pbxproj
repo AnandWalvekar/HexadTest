@@ -14,8 +14,20 @@
 		9121F12C21FDF13600BEC4BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9121F12A21FDF13600BEC4BF /* LaunchScreen.storyboard */; };
 		9121F13621FDF2A900BEC4BF /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 9121F13521FDF2A900BEC4BF /* Items.json */; };
 		9121F13821FDF8CB00BEC4BF /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121F13721FDF8CB00BEC4BF /* ItemListViewModel.swift */; };
+		9121F14021FEBD8800BEC4BF /* HexadTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121F13F21FEBD8800BEC4BF /* HexadTestTests.swift */; };
+		9121F14721FEBDC500BEC4BF /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121F13721FDF8CB00BEC4BF /* ItemListViewModel.swift */; };
 		ADC60846D6C381DD68DC5D39 /* Pods_HexadTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE13566B1C95C44DAB9079F /* Pods_HexadTest.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9121F14221FEBD8800BEC4BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9121F11621FDF13400BEC4BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9121F11D21FDF13400BEC4BF;
+			remoteInfo = HexadTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9121F11E21FDF13400BEC4BF /* HexadTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexadTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +39,9 @@
 		9121F12D21FDF13600BEC4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9121F13521FDF2A900BEC4BF /* Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
 		9121F13721FDF8CB00BEC4BF /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
+		9121F13D21FEBD8800BEC4BF /* HexadTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexadTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9121F13F21FEBD8800BEC4BF /* HexadTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexadTestTests.swift; sourceTree = "<group>"; };
+		9121F14121FEBD8800BEC4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C45C80576A624A789E5FE354 /* Pods-HexadTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexadTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HexadTest/Pods-HexadTest.release.xcconfig"; sourceTree = "<group>"; };
 		DFE13566B1C95C44DAB9079F /* Pods_HexadTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HexadTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC931B06C4372D8B71DDBA90 /* Pods-HexadTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexadTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HexadTest/Pods-HexadTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -38,6 +53,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADC60846D6C381DD68DC5D39 /* Pods_HexadTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9121F13A21FEBD8800BEC4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9121F12021FDF13400BEC4BF /* HexadTest */,
+				9121F13E21FEBD8800BEC4BF /* HexadTestTests */,
 				9121F11F21FDF13400BEC4BF /* Products */,
 				CC7CED7936FCABE017798EC8 /* Pods */,
 				8B3F3560C79C1BCEE55FE458 /* Frameworks */,
@@ -66,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				9121F11E21FDF13400BEC4BF /* HexadTest.app */,
+				9121F13D21FEBD8800BEC4BF /* HexadTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +107,15 @@
 				9121F12D21FDF13600BEC4BF /* Info.plist */,
 			);
 			path = HexadTest;
+			sourceTree = "<group>";
+		};
+		9121F13E21FEBD8800BEC4BF /* HexadTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				9121F13F21FEBD8800BEC4BF /* HexadTestTests.swift */,
+				9121F14121FEBD8800BEC4BF /* Info.plist */,
+			);
+			path = HexadTestTests;
 			sourceTree = "<group>";
 		};
 		CC7CED7936FCABE017798EC8 /* Pods */ = {
@@ -115,6 +148,24 @@
 			productReference = 9121F11E21FDF13400BEC4BF /* HexadTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9121F13C21FEBD8800BEC4BF /* HexadTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9121F14621FEBD8800BEC4BF /* Build configuration list for PBXNativeTarget "HexadTestTests" */;
+			buildPhases = (
+				9121F13921FEBD8800BEC4BF /* Sources */,
+				9121F13A21FEBD8800BEC4BF /* Frameworks */,
+				9121F13B21FEBD8800BEC4BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9121F14321FEBD8800BEC4BF /* PBXTargetDependency */,
+			);
+			name = HexadTestTests;
+			productName = HexadTestTests;
+			productReference = 9121F13D21FEBD8800BEC4BF /* HexadTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +178,10 @@
 				TargetAttributes = {
 					9121F11D21FDF13400BEC4BF = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					9121F13C21FEBD8800BEC4BF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9121F11D21FDF13400BEC4BF;
 					};
 				};
 			};
@@ -144,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				9121F11D21FDF13400BEC4BF /* HexadTest */,
+				9121F13C21FEBD8800BEC4BF /* HexadTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +213,13 @@
 				9121F12C21FDF13600BEC4BF /* LaunchScreen.storyboard in Resources */,
 				9121F12921FDF13600BEC4BF /* Assets.xcassets in Resources */,
 				9121F12721FDF13400BEC4BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9121F13B21FEBD8800BEC4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +261,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9121F13921FEBD8800BEC4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9121F14021FEBD8800BEC4BF /* HexadTestTests.swift in Sources */,
+				9121F14721FEBDC500BEC4BF /* ItemListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9121F14321FEBD8800BEC4BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9121F11D21FDF13400BEC4BF /* HexadTest */;
+			targetProxy = 9121F14221FEBD8800BEC4BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9121F12521FDF13400BEC4BF /* Main.storyboard */ = {
@@ -374,6 +454,46 @@
 			};
 			name = Release;
 		};
+		9121F14421FEBD8800BEC4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AA46946J4;
+				INFOPLIST_FILE = HexadTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = anand.HexadTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HexadTest.app/HexadTest";
+			};
+			name = Debug;
+		};
+		9121F14521FEBD8800BEC4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AA46946J4;
+				INFOPLIST_FILE = HexadTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = anand.HexadTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HexadTest.app/HexadTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,6 +511,15 @@
 			buildConfigurations = (
 				9121F13121FDF13600BEC4BF /* Debug */,
 				9121F13221FDF13600BEC4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9121F14621FEBD8800BEC4BF /* Build configuration list for PBXNativeTarget "HexadTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9121F14421FEBD8800BEC4BF /* Debug */,
+				9121F14521FEBD8800BEC4BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
